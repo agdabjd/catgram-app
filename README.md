@@ -17,3 +17,21 @@ Foram implementadas as seguintes funcionalidades:
 Também foi desenvolvida a identidade visual inicial do CatGram, com cores, elementos e telas personalizadas.
 
 Ao finalizar esta etapa, o aplicativo permite realizar o cadastro de novos usuários, efetuar login, acessar a tela inicial e encerrar a sessão.
+
+### Prints das telas
+
+**Tela de Login**
+
+![Tela de Login](prints/tela-login.png)
+
+**Tela de Cadastro**
+
+![Tela de Cadastro](prints/tela-cadastro.png)
+
+**Validação de Cadastro**
+
+![Validação](prints/validacao.png)
+
+**Cadastro Concluído**
+
+![Cadastro Concluído](prints/cadastro-concluido.png)
