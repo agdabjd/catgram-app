@@ -26,12 +26,10 @@ Ao finalizar esta etapa, o aplicativo permite realizar o cadastro de novos usuá
 
 **Tela de Cadastro**
 
-![Tela de Cadastro](prints/tela-cadastro.png)
+<img width="302" height="684" alt="image" src="https://github.com/user-attachments/assets/edc7bfd5-b61b-4955-b1c9-09573aeef86c" />
+
 
 **Validação de Cadastro**
 
-![Validação](prints/validacao.png)
+<img width="302" height="681" alt="image" src="https://github.com/user-attachments/assets/203bf592-d519-4027-954d-0bebb4ad811f" />
 
-**Cadastro Concluído**
-
-![Cadastro Concluído](prints/cadastro-concluido.png)
