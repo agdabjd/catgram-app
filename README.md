@@ -22,7 +22,7 @@ Ao finalizar esta etapa, o aplicativo permite realizar o cadastro de novos usuá
 
 **Tela de Login**
 
-![Tela de Login](prints/tela-login.png)
+<img width="309" height="689" alt="image" src="https://github.com/user-attachments/assets/d52b3bd3-bbf5-427e-8601-8182c0e70f43" />
 
 **Tela de Cadastro**
 
