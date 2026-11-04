@@ -33,3 +33,6 @@ Ao finalizar esta etapa, o aplicativo permite realizar o cadastro de novos usuá
 
 <img width="302" height="681" alt="image" src="https://github.com/user-attachments/assets/203bf592-d519-4027-954d-0bebb4ad811f" />
 
+**Link Wiki**
+
+https://github.com/agdabjd/catgram-app.wiki.git
