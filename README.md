@@ -1,7 +1,5 @@
 # catgram_app
 
-## Getting Started
-
 ### Etapa 1 — Login e Cadastro
 
 Nesta etapa, foi desenvolvida a estrutura inicial do aplicativo **CatGram**, utilizando Flutter e Firebase, com o objetivo de permitir o cadastro e a autenticação de usuários.
