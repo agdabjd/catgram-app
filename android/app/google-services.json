@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "75098097396",
+    "project_id": "catgram-app-2c768",
+    "storage_bucket": "catgram-app-2c768.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75098097396:android:6acbb97e776af6352340a1",
+        "android_client_info": {
+          "package_name": "com.example.catgram_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgBZMS6_XKZJ4ZveW8Ve7Q9nxdYoxAHdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
