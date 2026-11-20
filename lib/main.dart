@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'firebase_options.dart';
 
@@ -532,6 +533,14 @@ class CatGramAuthService {
           'createdAt': FieldValue.serverTimestamp(),
         });
       });
+
+      // Armazena somente os dados não sensíveis do último cadastro.
+      // Cada novo cadastro substitui os valores anteriores.
+      final preferences = await SharedPreferences.getInstance();
+      await preferences.setString('user_uid', user.uid);
+      await preferences.setString('user_name', displayName);
+      await preferences.setString('user_handle', '@$handle');
+      await preferences.setString('user_email', email.trim().toLowerCase());
     } catch (_) {
       // Se o perfil não puder ser criado, remove a conta Auth recém-criada
       // para evitar deixar uma conta incompleta.
@@ -554,53 +563,35 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser;
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: catCream,
         title: const Text('CatGram 🐾'),
-        actions: [
-          IconButton(
-            tooltip: 'Sair',
-            onPressed: () => FirebaseAuth.instance.signOut(),
-            icon: const Icon(Icons.logout),
-          ),
-        ],
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(24),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
+      drawer: Drawer(
+        child: SafeArea(
+          child: ListView(
+            padding: EdgeInsets.zero,
             children: [
-              const CatLogo(),
-              const SizedBox(height: 18),
-              const Text(
-                'Miau! Você entrou no CatGram.',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: catBrown,
-                  fontSize: 23,
-                  fontWeight: FontWeight.bold,
-                ),
+              const ListTile(title: Text('CatGram 🐾')),
+              ListTile(
+                leading: const Icon(Icons.home_outlined),
+                title: const Text('Início'),
+                onTap: () => Navigator.of(context).pop(),
               ),
-              const SizedBox(height: 12),
-              if (user != null)
-                Text(
-                  'Olá, ${user.displayName ?? user.email ?? 'pessoa usuária'}!',
-                  textAlign: TextAlign.center,
-                ),
-              const SizedBox(height: 24),
-              OutlinedButton.icon(
-                onPressed: () => FirebaseAuth.instance.signOut(),
-                icon: const Icon(Icons.logout),
-                label: const Text('Sair da conta'),
+              ListTile(
+                leading: const Icon(Icons.logout),
+                title: const Text('Sair'),
+                onTap: () async {
+                  Navigator.of(context).pop();
+                  await FirebaseAuth.instance.signOut();
+                },
               ),
             ],
           ),
         ),
       ),
+      body: const SizedBox.expand(),
     );
   }
 }
