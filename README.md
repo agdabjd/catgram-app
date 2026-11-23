@@ -54,8 +54,8 @@ Foram preservadas as telas de login e cadastro, a integração com Firebase e a 
 
 **Tela principal**
 
-<img width="302" height="684" alt="image" src="tela-principal.jpeg>
+<img width="302" height="684" alt="image" src="./tela-principal.jpeg">
 
 **Menu lateral de navegação**
 
-<img width="302" height="684" alt="image" src="menu-lateral.jpeg>
+<img width="302" height="684" alt="image" src="./menu-lateral.jpeg">
