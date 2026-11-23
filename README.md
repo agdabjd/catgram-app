@@ -28,7 +28,6 @@ Ao finalizar esta etapa, o aplicativo permite realizar o cadastro de novos usuá
 
 <img width="302" height="684" alt="image" src="https://github.com/user-attachments/assets/edc7bfd5-b61b-4955-b1c9-09573aeef86c" />
 
-
 **Validação de Cadastro**
 
 <img width="302" height="681" alt="image" src="https://github.com/user-attachments/assets/203bf592-d519-4027-954d-0bebb4ad811f" />
@@ -36,3 +35,27 @@ Ao finalizar esta etapa, o aplicativo permite realizar o cadastro de novos usuá
 **Link Wiki**
 
 https://github.com/agdabjd/catgram-app.wiki.git
+
+### Etapa 2 — Armazenamento Local e Menu de Navegação
+
+Nesta etapa, foi implementado o armazenamento local de dados do usuário e adicionado o menu lateral de navegação do **CatGram**, dando continuidade às funcionalidades desenvolvidas na etapa anterior.
+
+Foram implementadas as seguintes funcionalidades:
+
+- **Armazenamento local:** utilização do SharedPreferences para salvar dados do usuário no dispositivo, substituindo os dados anteriores a cada novo cadastro.
+- **Menu lateral de navegação:** implementação de um Drawer com as opções **Início** e **Sair**.
+- **Opção Início:** acesso à tela principal do aplicativo.
+- **Opção Sair:** encerramento da sessão do usuário.
+- **Tela principal:** manutenção da área de conteúdo em branco, conforme solicitado pelo professor.
+
+Foram preservadas as telas de login e cadastro, a integração com Firebase e a identidade visual desenvolvida na Etapa 1.
+
+### Prints das telas
+
+**Tela principal**
+
+<img width="302" height="684" alt="image" src="tela-principal.jpeg>
+
+**Menu lateral de navegação**
+
+<img width="302" height="684" alt="image" src="menu-lateral.jpeg>
